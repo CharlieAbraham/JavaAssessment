@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="objenesis-2.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/objenesis-2.6.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/mockito-core-3.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/byte-buddy-agent-1.9.10.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/byte-buddy-1.9.10.jar!/" />
+      <root url="file://$USER_HOME$/Desktop" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Desktop/MockAndStub/MockAndStub/src" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Desktop" recursive="false" />
+  </library>
+</component>
