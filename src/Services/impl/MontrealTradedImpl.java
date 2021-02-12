@@ -39,6 +39,10 @@ public class MontrealTradedImpl implements MontrealTradedProducts {
 
 
     public double totalValueOfDaysTradedProducts() {
-        return 0;
+        int totalTradeValue = 0;
+        for (Product quantity: products.keySet()) {
+            totalTradeValue += (quantity.getCurrentPrice() * products.get(quantity));
+        }
+        return totalTradeValue;
     }
 }
