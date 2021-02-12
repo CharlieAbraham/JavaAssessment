@@ -25,7 +25,7 @@ public class MontrealTradedImpl implements MontrealTradedProducts {
     public void trade(Product product, int quantity) {
         Boolean isFound = findProduct(product);
         if (isFound) {
-            products.put(product,quantity);
+            products.put(product,(products.get(product) + quantity));
         }
     }
 
@@ -40,8 +40,8 @@ public class MontrealTradedImpl implements MontrealTradedProducts {
 
     public double totalValueOfDaysTradedProducts() {
         int totalTradeValue = 0;
-        for (Product quantity: products.keySet()) {
-            totalTradeValue += (quantity.getCurrentPrice() * products.get(quantity));
+        for (Product pdt: products.keySet()) {
+            totalTradeValue += (pdt.getCurrentPrice() * products.get(pdt));
         }
         return totalTradeValue;
     }
